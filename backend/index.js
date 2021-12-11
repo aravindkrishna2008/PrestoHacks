@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
+const path = require('path');
+
 
 const mongoUri = 'mongodb+srv://Aravind:testpassword@cluster0.ulq7g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 mongoose.connect(mongoUri, {
@@ -21,11 +23,12 @@ mongoose.connection.on('error', (err) => {
   console.error('error connecting to mongo', err)
 })
 
-app.get('/home', (req, res) => {
-    res.send("hi")
-})
+app.get('/', function(req, res) {
+    res.sendFile("/home/nambi/my_projects/PrestoHacks/backend/public/website/index.html");
+  });
 
-const PORT = 4100
+const PORT = process.env.PORT || 4100;
+
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`)
