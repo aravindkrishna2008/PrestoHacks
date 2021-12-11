@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 const path = require('path');
 
-
 const mongoUri = 'mongodb+srv://Aravind:testpassword@cluster0.ulq7g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
@@ -24,7 +23,7 @@ mongoose.connection.on('error', (err) => {
 })
 
 app.get('/', function(req, res) {
-    res.sendFile("/home/nambi/my_projects/PrestoHacks/backend/public/website/index.html");
+    res.sendFile("/home/nambi/my_projects/PrestoHacks/Frontend/Main Page.html");
   });
 
 const PORT = process.env.PORT || 4100;
