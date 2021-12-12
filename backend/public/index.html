@@ -45,6 +45,25 @@
     </div>
 
     <div class="container">
+      <form action="action_page.php" method="post">
+        <div class="container">
+          <label for="uname"><b>Username</b></label><br>
+          <input type="text" placeholder="Enter Username" name="uname" required><br><Br>
+      
+          <label for="psw"><b>Password</b></label><br>
+          <input type="password" placeholder="Enter Password" name="psw" required><br><Br>
+      
+          <button type="submit">Login</button><br>
+          <label><br><Br>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1"><br>
+          <button type="button" class="cancelbtn">Cancel</button><br>
+          <span class="psw">Forgot <a href="#">password?</a></span><br>
+        </div><br>
+      </form><br><Br>
       <div id="login">
         <a href="/login" class="btn btn-primary">Log in with Spotify</a><br><Br>
         <a href="/login" class="btn btn-primary">Log in with Google</a><br><BR>

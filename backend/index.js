@@ -19,8 +19,8 @@
  refresh_token = ""
 
  
- var client_id = ''; // Your client id
- var client_secret = ''; // Your secret
+ var client_id = '35145dad80854895bffeb553ccf0ddee'; // Your client id
+ var client_secret = '9153a8e3e0e142acb52917e3e52202c3'; // Your secret
  var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
  
  /**
@@ -108,7 +108,7 @@
          // use the access token to access the Spotify Web API
          request.get(options, function(error, response, body) {
            pastSongs = body.items
-          //  console.log(body.items);
+           console.log(body.items);
           // const obj = JSON.parse(`${body}`);
           //  console.log(body);
          });
