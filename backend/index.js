@@ -19,8 +19,8 @@
  refresh_token = ""
 
  
- var client_id = 'CLIENTID'; // Your client id
- var client_secret = 'CLIENTSECRET'; // Your secret
+ var client_id = ''; // Your client id
+ var client_secret = ''; // Your secret
  var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
  
  /**
@@ -129,8 +129,8 @@
    }
  });
 
-app.get('/', function(req, res) {
-  res.send("hi")
+app.get('/home', function(req, res) {
+  res.sendFile("/home/nambi/my_projects/PrestoHacks/Frontend/Main Page.html")
 })
  
  app.get('/refresh_token', function(req, res) {
