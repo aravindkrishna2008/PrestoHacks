@@ -6,8 +6,12 @@
     <style type="text/css">
 
       .conatiner{
-        margin-top: 400px;
+        margin-left: 700px;
         text-align: center;
+      }
+
+      .conatiner a{
+        color:#fff;
       }
 
       #login, #loggedin {
@@ -20,6 +24,11 @@
         width: 500px;
       }
 
+      #heading{
+        text-align: center;
+        color: #fff;
+      }
+
       body{
         background-color: #40bbff;
       }
@@ -28,13 +37,19 @@
   </head>
 
   <body>
+
+    <div>
+      <nav id="heading">
+        <h1>Login</h1>
+      </nav>
+    </div>
+
     <div class="container">
       <div id="login">
-        <h1>Login</h1>
-        <a href="/login" class="btn btn-primary">Log in with Spotify</a><br>
-        <a href="/login" class="btn btn-primary">Log in with Google</a><br>
-        <a href="/login" class="btn btn-primary">Log in with Facebook</a><br>
-        <a href="/login" class="btn btn-primary">Log in with Github</a><br>
+        <a href="/login" class="btn btn-primary">Log in with Spotify</a><br><Br>
+        <a href="/login" class="btn btn-primary">Log in with Google</a><br><BR>
+        <a href="/login" class="btn btn-primary">Log in with Facebook</a><br><BR>
+        <a href="/login" class="btn btn-primary">Log in with Github</a><br><BR>
       </div>
       <div id="loggedin">
         <div id="user-profile">
